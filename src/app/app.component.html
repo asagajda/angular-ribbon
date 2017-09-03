@@ -1,5 +1,14 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<h2>Sections list:</h2>
-<div *ngFor="let tab of tabs">
-    <ribbon-tab [tab]="tab"></ribbon-tab>
-</div>
+<!--<div id="ribbon">
+    <div class="ribbon-window-title"></div>
+		<div class="ribbon-tab" id="format-tab">
+        <div *ngFor="let tab of tabs">
+            <ribbon-tab [tab]="tab"></ribbon-tab>
+        </div>
+    </div>
+</div>-->
+
+<md-tab *ngFor="let tab of tabs" [label]="tab.name">
+  <ribbon-section *ngFor="let section of tab.sections" [section]="section">
+    dfg
+  </ribbon-section>
+</md-tab>

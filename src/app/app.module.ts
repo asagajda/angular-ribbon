@@ -6,16 +6,19 @@ import { FormsModule }   from '@angular/forms';
 import { AppComponent } from './app.component';
 import { RibbonSectionComponent } from './ribbon-section.component';
 import { RibbonTabComponent } from './ribbon-tab.component';
+import { MdTabsModule } from '@angular/material';
 
 @NgModule({
   declarations: [
     AppComponent,
     RibbonSectionComponent,
     RibbonTabComponent,
+    //MdTabsModule,
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    MdTabsModule,
   ],
   providers: [],
   bootstrap: [
