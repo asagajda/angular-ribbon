@@ -9,7 +9,6 @@ import { RibbonButton } from "./button"
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  //sections = sections;
   tabs = tabs;
 }
 
@@ -24,11 +23,22 @@ const section1: RibbonSection = {
   ]
 }
 
+const section2: RibbonSection = {
+  id: 1,
+  name: "sec2",
+  buttons: [
+    {id:1, name: "butt1"},
+    {id:2, name: "butt2"},
+    {id:3, name: "butt3"},
+  ]
+}
+
+
 const tab1: RibbonTab =
 {
   id: 1,
   name: "Formatting",
-  sections: [section1],
+  sections: [section1, section2],
 }
 
 const tabs: RibbonTab[] = [tab1]

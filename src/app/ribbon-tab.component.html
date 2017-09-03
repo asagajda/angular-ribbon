@@ -1,4 +1,5 @@
-<div *ngFor="let section of tab.sections">
-  123
-
+<div class="ribbon-tab" id="format-tab">
+			<span class="ribbon-title">{{tab.name}}</span>
+      <div ribbon-section *ngFor="let section of tab.sections" [section]="section">
+      </div>
 </div>

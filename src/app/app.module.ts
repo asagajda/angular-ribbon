@@ -19,8 +19,6 @@ import { RibbonTabComponent } from './ribbon-tab.component';
   ],
   providers: [],
   bootstrap: [
-    AppComponent,
-    RibbonSectionComponent,
-    RibbonTabComponent,]
+    AppComponent,]
 })
 export class AppModule { }
